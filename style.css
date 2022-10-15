@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+    margin: 0;/* margin é a distancia entre tags e tags verticalmente */
+    padding: 0;/* padding é a distancia entre a tag que vc esta usando para o conteudo dela */
+    box-sizing: border-box;/* pesquisar */
+    text-decoration: none;/* tira qualquer decoração do texto (azul,sublinhado,...)*/
+}/* esse asteristico rosa diz que esatamos selecionando todas as tasg do nosso html */
+
+body{
+    font-size: 100%;
+    background-color: rgb(181, 210, 255);
+}
+
+/* diferentemente das tags as classes no css precisam de ponto antes da classe para serem editadas*/
+.cabeçalho{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 25px;
+    background: rgb(31,120,200);
+    background: radial-gradient(circle, rgba(31,120,200,1) 0%, rgba(25,72,237,1) 100%);
+    border-radius: 30px;
+    margin: 30px 100px;
+}
+
+.cabeçalho-imagem{
+    height: 60px;
+}
+
+.cabeçalho-navegação {
+    display: flex;
+    gap: 80px; 
+    align-items: center;
+}
+
+.cabeçalho-navegação-item {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.conteudo{
+    margin-bottom: 40px;
+}
+
+.conteudo-principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.conteudo-principal-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+}
+
+.conteudo-principal-escrito-titulo{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    color: rgb(39, 90, 200);
+}
+
+.conteudo-principal-escrito-subtitulo{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    color: azure;
+}
+
+.conteudo-principal-escrito-botao{
+    background-color:  rgb(39, 90, 200);
+    width: 180px;
+    height: 67px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 4px 5px 4px rgba(0,0,0,0.25);
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    color:azure;
+}
+
+.conteudo-principal-escrito-botao:hover {
+    background-color: rgb(34, 68, 139);
+
+}
+
+.conteudo-principal-imagem{
+    height: 430px;
+}
+
+.conteudo-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.conteudo-secundario-titulo{
+    border-top: 0.4px solid rgb(39, 90, 200);
+    padding-top: 40px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    color: rgb(39, 90, 200);
+    margin-bottom: 15px;
+}
+
+.conteudo-secundario-paragrafo{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    color: rgb(76, 115, 197);
+}
+
+.rodape {
+    padding: 32px;
+    border-top: 0.4px solid rgb(39, 90, 200);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 90px;
+    color: rgb(39, 90, 200); 
+    
+}
